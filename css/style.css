@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+		background-color: #350D50;
+	}	
+	#center{
+    width: 70%;
+    height: 100%;
+    background-color:#9245FF;
+	float: left;
+	margin-left: 17%;
+	margin-right: 17%;
+    text-align: center;
+	}
+	#title{
+		margin-top: 5%;
+	}
+	#detail{
+		margin-left: 80%;
+		margin-top: 3%;
+	}
+	#start_button{
+		margin-top: 3%;
+		margin-left: 30%;
+		margin-right: 30%;
+		width: 40%;
+		height: auto;
+	}
+	.table{
+		width: 100%; 
+		height: 80px; 
+		background-color: #520099;
+		color: aliceblue;
+	}
+	.content{
+	width: 70%;
+	height: 600px;
+	background-color:#000000;
+	margin-left: 15%;
+	margin-right: auto;
+	}
