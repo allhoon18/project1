@@ -2,15 +2,17 @@
 /* CSS Document */
 
 body{
-		background-color: #350D50;
+	background-color: #350D50;
+	width: 1920px;
+	height: 1080px;
 	}	
 #center{
     width: 70%;
-    height: 100%;
+    height: 70%;
     background-color:#9245FF;
 	float: left;
-	margin-left: 17%;
-	margin-right: 17%;
+	margin-left: 15%;
+	margin-right: 15%;
 	margin-bottom: 10px;
     text-align: center;
 	}
@@ -30,43 +32,71 @@ body{
 	}
 .table{
 	width: 100%; 
-	height: 150px; 
+	height: 30%; 
 	background-color: #520099;
 	color: aliceblue;
 	}
 .content{
 	position: relative;
+	z-index: 1; 
 	width: 70%;
-	height: 550px;
+	height: 70%;
 	background-color:#000000;
 	margin-left: 15%;
-	margin-right: auto;
+	margin-right: 15%;
 	}
 .home_button{
+	position: relative;
 	width: 5%;
+	margin-left: 2%;
+	margin-top: 2%;
 	height: auto;
-	margin-top: 3%;
-	margin-left: 3%;
-	margin-right: auto;
 	float: left;
 	}
 .next_button{
+	position: relative;
 	width: 5%;
 	height: auto;
-	margin-top: 32%;
-	margin-right: 8%;
-	margin-left: auto;
 	float: right;
+	margin-top: 20%;
+	margin-right: 3%;
 	}
 .text_box{
 	position: relative;
-	left: 15%;
+	z-index: 2;
+	top: 75%;
+	left: 1%;
 	right: auto;
-	top: -170px;
-	width: 829px;
-	height: 130px;
+	width: 94.5%;	
+	height: 15%;
 	background-color:rgba(255,255,255,0.54);
 	border: double 12px #FFCB33; 
 	padding: 10px 10px 10px 10px;
 	color: black;
 	}
+
+.move_right{
+	position: absolute;
+	top: -150px;
+	right: 15%;
+	float: right;
+	width: 8%;
+	height: auto;
+}
+.move_left{
+	position: absolute;
+	top: -150px;
+	left: 18%;
+	float: left;
+	width: 8%;
+	height: auto;	
+}
+.move_upper{
+	position: absolute;
+	top: 20px;
+	left: 46%;
+	right: auto;
+	width: 8%;
+	height: auto;
+	float: none;
+}
