@@ -57,7 +57,7 @@ body{
 .text_box{
 	position: relative;
 	z-index: 3;
-	top: -25%;
+	top: -53%;
 	left: 1%;
 	right: auto;
 	width: 94.5%;	
@@ -140,4 +140,22 @@ body{
 	color: black;
 	padding: 1%;
 	text-align: center;
+	}
+.door_button_1{
+	position: relative;
+	z-index: 3;
+	width: 10%;
+	height: 23%;
+	left: 45%;
+	right: auto;
+	top: -30%;
+	}
+.butler{
+	position: relative;
+	z-index: 4;
+	width: 8%;
+	height: 28%;
+	left: 82%;
+	right: auto;
+	bottom: 52%;
 	}
