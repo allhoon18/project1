@@ -57,6 +57,19 @@ body{
 .text_box{
 	position: relative;
 	z-index: 3;
+	top: -25%;
+	left: 1%;
+	right: auto;
+	width: 94.5%;	
+	height: 18%;
+	background-color:rgba(255,255,255,0.54);
+	border: double 12px #FFCB33; 
+	padding: 10px 10px 10px 10px;
+	color: black;
+	}
+.text_box_2{
+	position: relative;
+	z-index: 3;
 	top: -53%;
 	left: 1%;
 	right: auto;
