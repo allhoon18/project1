@@ -96,33 +96,7 @@ body{
 	margin-top: 30%;
 	margin-right: 8%;
 	}
-.move_right{
-	position: relative;
-	z-index: 4;
-	top: -30%;
-	right: 6%;
-	float: right;
-	width: 12%;
-	height: 14%;
-	}
-.move_left{
-	position: relative;
-	z-index: 4;
-	top: -30%;
-	left: 6%;
-	float: left;
-	width: 12%;
-	height: 14%;	
-	}
-.move_upper{
-	position: relative;
-	z-index: 4;
-	top: -105%;
-	left: 44%;
-	right: 44%;
-	width: 12%;
-	height: 15%;
-	}
+
 .choice_1{
 	position: relative;
 	left: 6%;
@@ -171,4 +145,31 @@ body{
 	left: 82%;
 	right: auto;
 	bottom: 52%;
+	}
+.move_right{
+	position: relative;
+	z-index: 4;
+	top: -30%;
+	right: 6%;
+	float: right;
+	width: 12%;
+	height: 14%;
+	}
+.move_left{
+	position: relative;
+	z-index: 4;
+	top: -30%;
+	left: 6%;
+	float: left;
+	width: 12%;
+	height: 14%;	
+	}
+.move_upper{
+	position: relative;
+	z-index: 4;
+	top: -105%;
+	left: 44%;
+	right: 44%;
+	width: 12%;
+	height: 15%;
 	}
