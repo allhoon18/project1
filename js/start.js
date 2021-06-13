@@ -1,20 +1,62 @@
 // JavaScript Document
 
+var pageNo;
+var ans1;
+var ans2;
+var ans3;
 
-function begin() {
-/*이만큼만 있으면 이 기능을 사용할 수 있다*/
-/*for(let i = 0; i<2; i++)*/
-	
-	prolog_1.style.display = "none";
-	prolog_2.style.display = "block";
+function begin(no) { 
+	if ( no == null || no == "" ) {
+		no = 1;
 	}
-function goNext() {
-	var q1 = document.querySelector("#choice_1");
-	q1.innerHTML= qnaList[0].a[0].answer;
+	if ( no > 5 ) {
+		return;
+	}
+	//alert(no);
 	
-	var q2 = document.querySelector("#choice_2");
-	q2.innerHTML=qnaList[0].a[1].answer;
+	var objId  = "prolog_" + no;
+	var no2 = no + 1;
+	var objId2 = "prolog_" + no2;
+	
+	eval(objId).style.display = "none";
+	eval(objId2).style.display = "block";
+	pageNo = no2;
+	//페이지 전환, next 버튼이 사용되지 않을시 숨길 필요 존재
+}
+//선택화면이 연달아 나옴, 배경 이미지만 각각에 맞게 삽입 선택 마지막에 버튼이 안보이도록 제거
+function fbtn1() {
+	if ( btn1.value === "Starry" ) {
+		btn1.value = "aaa";
+		btn2.value = "bbb";
+		ans1 = btn1.value;
+	}
+	if ( btn1.value === "aaa" ) {
+		btn1.value = "aaabbb";
+		btn2.value = "bbbbbb";
+		ans2 = btn1.value;
+	}
+	if ( btn1.value === "aaabbb" ) {
+		//btn1.value = "aaabbb";
+		//btn2.value = "bbbbbb";
+		ans3 = btn1.value;
+	}
+	
 }
 
-/*넣는거 까지는 어떻게 되겠데 이걸 반복적으로 해야하니 반복문을 사용해야하는데 거기서부터가 막히네*/
-/*페이지 전환에 반복문 사용 필요, 질문 형성에서 각 질문은 어차피 2개씩이라 반복문은 필요없고 질문 전환까지만 처리하면 될거 같은데*/
+function fbtn2() {
+	if ( btn2.value === "Cloudless" ) {
+		btn1.value = "aaa";
+		btn2.value = "bbb";
+		ans1 = btn2.value;
+	}
+	if ( btn2.value === "bbb" ) {
+		btn1.value = "eeee";
+		btn2.value = "ffff";
+		ans2 = btn2.value;
+	}
+	if ( btn2.value === "bbbbbb" ) {
+		//btn1.value = "aaabbb";
+		//btn2.value = "bbbbbb";
+		ans3 = btn2.value;
+	}
+}
