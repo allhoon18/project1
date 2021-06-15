@@ -3,6 +3,7 @@
 var pageNo;
 var storyNo;
 var endNo;
+var mainNo;
 var ans1;
 var ans2;
 var ans3;
@@ -11,7 +12,7 @@ function goNext(no) {
 	if ( no == null || no == "" ) {
 		no = 1;
 	}
-	if ( no > 5 ) {
+	if ( no > 4 ) {
 		return;
 	}
 	//alert(no);
@@ -77,39 +78,80 @@ function end_2(eNo){
 	endNo = eNo2;
 }
 
+function mainNext(mNo){
+	if ( mNo == null || mNo == "" ) {
+		mNo = 1;
+	}
+	if ( mNo > 14 ) {
+		return;
+	}
+	if (mNo == 14) {
+		nextbtn.style.display = "none";
+	}
+	//alert(eNo);
+	
+	var mainId  = "main_" + mNo;
+	var mNo2 = mNo + 1;
+	var mainId2 = "main_" + mNo2;
+	
+	eval(mainId).style.display = "none";
+	eval(mainId2).style.display = "block";
+	mainNo = mNo2;
+}
+
+function goLeft() {
+	main_15.style.display="none";
+	room_left.style.display="block";
+}
+
+function lobby() {
+	room_left.style.display="none";
+	main_15.style.display="block";
+}
+function stanza_1(){
+	room_left.style.display="none";
+	stanza.style.display="block";
+}
+
 function fbtn1() {
 	if ( btn1.value === "Starry" ) {
-		btn1.value = "aaa";
-		btn2.value = "bbb";
 		ans1 = btn1.value;
 	}
-	if ( btn1.value === "aaa" ) {
-		btn1.value = "aaabbb";
-		btn2.value = "bbbbbb";
+	if ( ans1 === "Starry" ) {
 		ans2 = btn1.value;
+		btn1.value = "Aspect";
+		btn2.value = "Eyes";
 	}
-	if ( btn1.value === "aaabbb" ) {
-		//btn1.value = "aaabbb";
-		//btn2.value = "bbbbbb";
-		ans3 = btn1.value;
+	if ( ans2 === "Aspect" ) {
+		btn1.value = "Tender";
+		btn2.value = "Heaven";
+		ans3 = btn2.value;	
 	}
-	
+	if ( ans3==="Tender") {
+		stanza.style.display = "none";
+		room_left_com.style.display="block";
+	}
 }
 
 function fbtn2() {
 	if ( btn2.value === "Cloudless" ) {
-		btn1.value = "aaa";
-		btn2.value = "bbb";
 		ans1 = btn2.value;
 	}
-	if ( btn2.value === "bbb" ) {
-		btn1.value = "eeee";
-		btn2.value = "ffff";
+	if ( ans1 === "Cloudless" ) {
 		ans2 = btn2.value;
+		btn1.value = "Aspect";
+		btn2.value = "Eyes";
 	}
-	if ( btn2.value === "bbbbbb" ) {
-		//btn1.value = "aaabbb";
-		//btn2.value = "bbbbbb";
+	if ( ans2 === "Eyes") {
+		btn1.value = "Tender";
+		btn2.value = "Heaven";	
 		ans3 = btn2.value;
+		}
+	if ( ans3==="Heaven") {
+		stanza.style.display = "none";
+		room_left_com.style.display="block";
 	}
 }
+
+
+

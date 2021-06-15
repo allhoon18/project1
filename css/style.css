@@ -113,13 +113,14 @@ a.hover{
 	top: -45%;
 	z-index: 4;
 	width: 86%;
-	height: 3%;
+	height: 6%;
 	background-color: rgba(255,255,255,0.54);
 	border: double 10px #FFA223;
 	border-radius: 20px/20px;
 	color: black;
 	padding: 1%;
 	text-align: center;
+	font-size: medium;
 	}
 .choice_2{
 	position: relative;
@@ -136,6 +137,7 @@ a.hover{
 	color: black;
 	padding: 1%;
 	text-align: center;
+	font-size: medium;
 	}
 .door_button_1{
 	position: relative;
@@ -182,3 +184,24 @@ a.hover{
 	width: 12%;
 	height: 15%;
 	}
+.painting{
+	z-index: 3;
+	position: relative;
+	bottom: 90%;
+	left: 10%;
+	width: 50%;
+	height: 50%;
+	background-color: #000000;
+	border: groove 20px #FFAB05;
+}
+.door{
+	z-index: 4;
+	position: relative;
+	bottom: 108%;
+	left: 75%;
+	width: 13%;
+	height: 33%;
+	background-color: #222222;
+	text-color: #ffffff;
+	text-align: center
+}
