@@ -152,7 +152,7 @@ function fbtn2() {
 		room_left_com.style.display="block";
 	}
 }
-function return() {
+function re_lobby() {
 	room_left_com.style.display = "none";
 	main_15.style.display = "block";
 }
